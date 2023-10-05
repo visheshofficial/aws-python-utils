@@ -2,7 +2,8 @@ import boto3
 from tabulate import tabulate
 import os
 
-profile_name = "ivdevdo"
+# profile_name = "ivdevdo"
+profile_name = "AdministratorAccess-337941034038"
 table_fmt = "simple_grid"
 
 aws_account_number = None

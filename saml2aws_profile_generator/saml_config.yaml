@@ -1,0 +1,72 @@
+profiles:
+# Unity Dev
+  - profile: uccdevdo
+    role_arn: arn:aws:iam::078402339249:role/DevOps
+    region: eu-west-1
+# Unity Stg
+  - profile: uccstgro
+    role_arn: arn:aws:iam::397909250005:role/ReadOnly
+    region: eu-west-1
+  - profile: uccstgfa
+    role_arn: arn:aws:iam::397909250005:role/FullAdmin
+    region: eu-west-1
+# Unity Prod
+  - profile: uccprodro
+    role_arn: arn:aws:iam::991686216873:role/ReadOnly
+    region: eu-west-1
+# Solutions Hub Dev
+  - profile: shdevdo
+    role_arn: arn:aws:iam::112671179323:role/DevOps
+    region: eu-central-1
+  - profile: shdevdev
+    role_arn: arn:aws:iam::112671179323:role/Developer
+    region: eu-central-1
+  - profile: shdevfa
+    role_arn: arn:aws:iam::112671179323:role/FullAdmin
+    region: eu-central-1
+# Solutions Hub Prod
+  - profile: shproddo
+    role_arn: arn:aws:iam::362192534561:role/DevOps
+    region: eu-central-1
+  - profile: shprodro
+    role_arn: arn:aws:iam::362192534561:role/ReadOnly
+    region: eu-central-1
+  - profile: shprodfa
+    role_arn: arn:aws:iam::362192534561:role/FullAdmin
+    region: eu-central-1
+# IV Dev
+  - profile: ivdevdo
+    role_arn: arn:aws:iam::227453728059:role/DevOps
+    region: eu-central-1
+  - profile: ivdevfa
+    role_arn: arn:aws:iam::227453728059:role/FullAdmin
+    region: eu-central-1
+# IV Stg
+  - profile: ivstgdo
+    role_arn: arn:aws:iam::451139520584:role/vgsl-intelvoice-global-iam-rl-devops
+    region: eu-central-1
+  - profile: ivstgro
+    role_arn: arn:aws:iam::451139520584:role/vgsl-intelvoice-global-iam-rl-readonly
+    region: eu-central-1
+# SDWAN Dev
+  - profile: sdwdevido
+    role_arn: arn:aws:iam::010657612649:role/InfraDevOps
+    region: eu-central-1
+    k8s_cluster_name: ready-networks-dev-eks01
+# SDWAN Stg
+  - profile: sdwstgido
+    role_arn: arn:aws:iam::010657612649:role/InfraDevOps
+    region: eu-central-1
+    k8s_cluster_name: ready-networks-stage-eks01
+# SDWAN Prod
+  - profile: sdwprodido
+    role_arn: arn:aws:iam::333821229857:role/InfraDevOps
+    region: eu-central-1
+
+
+
+global:
+  app_id: 78f5464b-e016-4fdb-9478-ba285b87fb8e
+  url: https://account.activedirectory.windowsazure.com
+  username: vishesh.bhagat@vodafone.com
+  provider: AzureAD
